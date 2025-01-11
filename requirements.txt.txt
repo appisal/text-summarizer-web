@@ -1,4 +1,0 @@
-sumy==0.8.1
-nltk
-numpy
-streamlit
