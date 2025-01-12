@@ -3,8 +3,9 @@ from sumy.parsers.plaintext import PlaintextParser
 from sumy.nlp.tokenizers import Tokenizer
 from sumy.summarizers.lsa import LsaSummarizer
 import nltk
-nltk.download('punkt')  
 
+# Add punkt tokenizer
+nltk.data.path.append('./nltk_data')  # Ensure the downloaded punkt model is used
 
 # Function to summarize text
 def summarize_text(text, num_sentences):
